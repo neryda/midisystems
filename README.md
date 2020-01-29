@@ -1,2 +1,6 @@
-# midisystems
+# MidiSystems
 source midisystems.ru
+
+Здесь расположены файлы сайта MidiSystems.ru
+Сайт создан в учебных целях.
+Медленно, но верно эксперементирую/доделываю разный код.
