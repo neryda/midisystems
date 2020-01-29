@@ -1,0 +1,471 @@
+body{/*обращение по тэгу ко всему сайту*/
+  margin: 0;
+/*Работа со скролом*/
+/* overflow: hidden; скрыть скролл
+overflow-x: hidden;
+overflow-y: hidden;*/
+}
+img{
+    border-radius: 10px;/*закругляем объект*/
+}
+.back_fixed{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+  overflow: auto;
+  display: none;
+}
+.form-lw-thanks{
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px auto;
+}
+.js-form-lw{
+  position: relative;
+  width: 300px;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 150px);
+}
+.title-form-lw{
+  font-size: 20px;
+}
+
+.js-form-lw input{
+  width: calc(100% - 2px);
+  border: 1px solid #DDD;
+  height: 40px;
+  text-indent: 10px;/*отступ внутри текстого объекта*/
+  border-radius: 3px;
+  margin-top: 20px;
+}
+button{
+  width: calc(100% - 2px);
+  margin-top: 20px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;/*задаем высоту текста*/
+  color: #FFF;/*цвет текста*/
+  text-transform: uppercase;
+  background: rgba(131,50,58,1);
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.5);/*задаем тень*/
+  cursor:pointer;
+  outline: inherit;/*убираем подсвечивание*/
+}
+button:hover{/*действия при наведении курсором*/
+  background: rgba(58,46,43,0.7);
+  border: 1px solid rgba(255,185,185,0.5);
+  transition: 0.3s;
+}
+.close_form{
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  cursor: pointer;
+}
+
+
+.clear{
+  clear: both;/*чтобы убрать выравнивание у li*/
+}
+.placebo{ /*Чтоб можно поскролить*/
+  height: 500px;
+}
+
+.head{ /*Заливаем шапку градиентом*/
+  height: 160px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ffb7b7 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffb7b7 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#ffb7b7 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb7b7',GradientType=0 ); /* IE6-9 */
+}
+
+.content{/*блок для наполнения*/
+  width: 960px;
+  margin: 0px auto;
+}
+.language_rus{/*иконка русского языка*/
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: url(../img/head_ico_rus.png);
+  cursor: pointer;
+
+}
+.language_eng{/*иконка английского языка*/
+  float: right;
+  width: 24px;
+  height: 24px;
+  background: url(../img/head_ico_eng.png);
+  cursor: pointer;
+
+}
+.head_logo{/*Картинка с баяном*/
+  float: left;
+  width: 186px;
+  height: 151px;
+  background: url(../img/head_logo.png);
+  background-size: cover;/*подстройка фона под размер блока*/
+}
+
+.head_logo_name{
+  float: left;
+  width: 500px;
+  height: 145px;
+  background: url(../img/head_logo_name.png);
+  /*background-size: cover;подстройка фона под размер блока*/
+  margin-top: 15px;
+}
+
+.head_contact{/*блок с телефоном, емейлом*/
+  float: right;/*Все блоки притягиваем вправо*/
+  text-align: right;/*Все содержимое текста блока притянуть вправо*/
+  width: 274px;
+  height: 160px;
+}
+
+.head_phone{/*настройка тега А с телефоном*/
+  margin-top: 30px;
+  font-size: 20px;
+  color: #444444;
+  display: block;/*меняем строчный на табличный*/
+  text-decoration: none;/*убрать поддчеркивание у тега А*/
+}
+
+.head_email{/*настройка тега А с емейлом*/
+  margin-top: 10px;
+  font-size: 18px;
+  color: #83323A;
+  display: block;/*меняем строчный на табличный*/
+  text-decoration: none;/*убрать поддчеркивание у тега А*/
+}
+
+.head_adress{/*настройка блока с адресом*/
+
+  font-size: 16px;
+  color: #444444;
+  margin-top: 24px;
+}
+
+
+
+/*Создание меню сайта*/
+.menu{
+  height: 30px;
+  background: #3a2e2b;/*Цвет фона меню*/
+  overflow: hidden;
+
+}
+
+.menu ul{
+  margin: 0;/*сбрасываем внешние отступы у ul*/
+  padding: 0;/* сьрасываем поля вокруг текста */
+  list-style: none;/*сбрасываем отображение точек*/
+
+}
+.menu ul li{
+  float: left;/*делаем, чтобы блоки шли друг за другом*/
+  line-height: 30px;/*Задаём высоту строки*/
+/*  width: 20%;/*делаем ширину 25% для распределения 4 кнопок*/
+}
+.menu ul li a{
+  display:block; /*делаем тег А блочным(чтобы нажимать
+не только по тексту)*/
+  height: 30px;/*когда тег А сделали блочным, задаем высоту в 50px*/
+  text-decoration:none;/*Отменяет все эффекты,
+в том числе и подчеркивания у ссылок, которое задано по умолчанию.*/
+  font-size: 20px;
+  font-weight: bolder;
+  color: #FFF;/*т.к. это ссылка, то автоматически задается цвет*/
+  text-align: center;/*установка текста по центру*/
+  margin-left: 130px;
+}
+
+.search_icon{/*Иконка поиска*/
+  height: 25px;
+  width: 25px;
+  float: right;
+  margin-top: 2.5px;/*Отступ сверху*/
+  cursor: pointer;/*При наводке курсор*/
+
+}
+.search_icon svg{
+fill: #83323A;/*цвет для SVG картинки*/
+}
+
+.big_image{
+  height: 420px;
+  background: url(../img/big_image.jpg);/*Фон картинка*/
+  background-repeat: no-repeat;/*отмена повторения картинки*/
+  background-position: center;/*центруем картинку*/
+  background-size: cover;/*подстраиваем под объект*/
+  overflow: hidden;/*скрывааем прокрутку*/
+}
+
+.big_title{
+  font-size: 25px;/*размер шрифта*/
+  font-weight: normal;/*толщина шрифта*/
+  text-align: center;/*выставляем по центру*/
+  margin-top: 100px;/*отступ сверху*/
+  color: #FFF;
+  text-transform: uppercase;/*все заглавные буквы*/
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+}
+.mini_title{
+  margin-top: 40px;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+}
+
+.buttons_image{/*отступ от верхнего текста*/
+  margin-top: 50px;
+}
+
+.button_image_left{/*выравниваем картинку*/
+  float: left;
+  margin-left: 175px;
+}
+.button_image_right{/*выравниваем картинку*/
+  float: right;
+  margin-right: 175px;
+}
+
+.button_image{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;/*задаем высоту текста*/
+  color: #FFF;/*цвет текста*/
+  text-transform: uppercase;
+  background: rgba(58,46,43,1);
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(255,185,185,1);/*задаем цевт и толщину окантовки*/
+  box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.5);/*задаем тень*/
+  cursor:pointer;
+}
+
+.button_image:hover{/*действия при наведении курсором*/
+  background: rgba(58,46,43,0.7);
+  border: 1px solid rgba(255,185,185,0.5);
+  transition: 0.3s;
+}
+
+
+.main_title{
+  font-size: 30px;
+  text-align:center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+.about_us_text{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.point_production{
+  width: 33.3333%;
+  float: left;
+}
+
+.point_production_image{
+  text-align: center;
+
+}
+.point_production_text{
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.point_blog_image{
+  width: 600px;
+  height: 338px;
+  margin-bottom: 30px;
+  float: left;
+  text-align: center;
+  border: 2px solid #83323A;
+  border-radius: 10px;/*закругляем объект*/
+}
+
+.point_production_blog{
+  margin-left: 25px;
+  width: 330px;
+  height: 100px;
+  float: left;
+  font-size: 18px;
+}
+.footer{
+  overflow: hidden;
+  margin-top: 10px;
+  background: #3a2e2b;
+  height: 210px;
+}
+.footer_logo{
+  margin-top: 25px;
+  width: 186px;
+  height: 151px;
+  background: url(../img/footer_logo.png);
+  background-size: cover;/*подстройка фона под размер блока*/
+}
+.left_footer{
+  float: left;
+
+}
+.copyright{
+  font-size: 14px;
+  color: #FFF;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.right_footer{
+  float: right;
+}
+
+.footer_menu{
+    float: right;
+  margin: 0;/*отступы убираем у ul*/
+  padding: 0;/*внутрение отступы тоже убираем у ul*/
+  list-style: none;/*Убираем точки ul*/
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footer_menu li{
+  float: left;/*делаем, чтобы блоки шли друг за другом*/
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.footer_menu li a{
+  color: #FFF;
+  text-decoration: none;/*Убираем подчеркивание у А*/
+  text-transform: uppercase;
+}
+
+.footer_adrees{
+  float: right;
+  margin-top: 40px;
+}
+.point_info_footer{
+  margin-bottom: 20px;
+}
+
+.point_info_footer_icon{
+  float: left;
+}
+.point_info_footer_icon svg{
+  fill: #83323A;
+}
+.point_info_footer_text{
+  width: 252px;
+  margin-left: 5px;
+  margin-top: 4px;
+  float: left;
+  color: #FFF;
+}
+.footer_contact{
+  float: right;
+  margin-top: 40px;
+}
+.button_map{
+  float: right;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFF;
+  cursor: pointer;
+  background: #83323A;
+
+}
+
+/*////////////////////////////
+CSS свойства для вкладки production.php
+/////////////////////////////*/
+.label_information{
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  float: right;
+  width: 607px;
+  height: 55px;
+  text-align: center;
+  border-radius: 5px;/*закругляем объект*/
+  font-weight:bold;
+}
+.label_sort{
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  float: right;
+  width: 332px;
+  height: 55px;
+  text-align: center;
+  border-radius: 5px;/*закругляем объект*/
+}
+.button_sort{/*кнопка сортировки*/
+  float: right;
+  width: 150px;
+  height: 30px;
+
+  margin-right: 10px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFF;
+  cursor: pointer;
+  background: #83323A;
+}
+.production{/*один общий div в котором хранится block_production*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  margin-top: 20px;
+  height: 820px;
+}
+.block_production{/*общий div в котором хранятся все div-ы с продукцией*/
+
+}
+.img_production{/*div в котором хранится картинка продукта*/
+  float: left;
+  width: calc((100%/2) - 32px);
+  height: 360px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  text-align: center;
+  line-height: 20px;/*задаем высоту текста*/
+  color: #FFF;/*цвет текста*/
+  text-transform: uppercase;
+  background: rgba(131,50,58,1);
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  outline: inherit;/*убираем подсвечивание*/
+}
+
+.picture_production{/*фото продукции*/
+  margin-top: 20px;
+}
+.cost{/*цена продукции*/
+  margin-top: 5px;
+}
+.production_name{/*текст название продукта продажи*/
+  font-size: 1em;
+  margin: 0px;
+  text-transform: none;
+}

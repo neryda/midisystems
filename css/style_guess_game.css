@@ -1,0 +1,30 @@
+.guess_game {
+
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  margin-top: 20px;
+  height: 354px;
+  background: rgba(131,50,58,1);
+}
+
+.guess_game_img {
+
+  float: left;
+  width: 200px;
+  height: 286px;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  background: #FFF;
+  background-size: cover;
+  text-align: center;
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+
+}
+.guess_game_rule {
+  margin-top: 5px;
+  font-size: 1em;
+  text-align:center;
+  color: white;
+
+}

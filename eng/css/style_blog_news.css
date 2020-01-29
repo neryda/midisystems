@@ -1,0 +1,42 @@
+.news {
+
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  margin-top: 20px;
+  height: 341px;
+
+}
+
+.block_news {
+
+  float: left;
+  width: calc((100%/2) - 32px);
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  text-align: center;
+  line-height: 40px;/*задаем высоту текста*/
+  color: #FFF;/*цвет текста*/
+  text-transform: uppercase;
+  background: rgba(131,50,58,1);
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+    outline: inherit;/*убираем подсвечивание*/
+}
+
+.img_news{
+  margin-top: 20px;
+}
+
+.news a{
+  display:block; /*делаем тег А блочным(чтобы нажимать
+не только по тексту)*/
+  height: 30px;/*когда тег А сделали блочным, задаем высоту в 50px*/
+  text-decoration:none;/*Отменяет все эффекты,
+в том числе и подчеркивания у ссылок, которое задано по умолчанию.*/
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000;/*т.к. это ссылка, то автоматически задается цвет*/
+  text-align: center;/*установка текста по центру*/
+  margin-left: 10px;
+}
