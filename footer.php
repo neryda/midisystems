@@ -35,7 +35,7 @@
           </div>
           <div class="clear"></div>
         </div>
-        <div class="button_map">
+        <div class="button_map" id="button_map">
           Карта проезда
         </div>
       </div>
@@ -68,7 +68,17 @@
 </div>
 </div>
 <!--Конец///Футер\\\Конец-->
+<script>
 
+document.getElementById("button_map").onclick = function()
+{
+  document.location.href = "map.php";
+}
+
+
+  //var  = document.getElementsByClassName('name');//получем массив со всеми объектами содержащие класс name
+
+</script>
 
 <!--Распределение блоков равномерно:
 1)width=100%/n
