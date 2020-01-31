@@ -20,9 +20,9 @@
       <div class="img_news">
       <img src="img/news2.jpg" alt="">
       </div>
-      <a href="/index.php">Новость2</a>
+      <a href="/blog_new_video.php">Видео с тестирования</a>
       <p class="game_text">
-      Здесь будет какая-то новость или ещё что-нибудь
+      Видео готового баяна
       </p>
     </div>
   </div>

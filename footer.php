@@ -5,7 +5,7 @@
     <div class="left_footer"><!--левая часть футера-->
     <div class="footer_logo"></div><!--Логотип баяна-->
     <div class="copyright">
-      © 2019 Midi-Systems
+      © 2019 MidiSystems
     </div>
     </div>
 
@@ -28,7 +28,7 @@
       <div class="footer_adrees">
         <div class="point_info_footer">
           <div class="point_info_footer_icon">
-            <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"/></svg>
+            <svg class="icon_map" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"/></svg>
           </div>
           <div class="point_info_footer_text">
           Адрес: г. Воронеж, ул. Перевёрткина
@@ -68,15 +68,19 @@
 </div>
 </div>
 <!--Конец///Футер\\\Конец-->
+
 <script>
 
 document.getElementById("button_map").onclick = function()
 {
   document.location.href = "map.php";
 }
-
-
-  //var  = document.getElementsByClassName('name');//получем массив со всеми объектами содержащие класс name
+//функция клика на SVG значок карты.
+function map_svg_icon_click(){
+  var goToMap = document.getElementsByClassName("icon_map");//найдем все элементы по классу icon_map
+  goToMap[0].onclick = function(){document.location.href = "map.php";};/*т.к. он у меня один, значит нулевому объекту из массива назначаем обработчик события*/
+}
+map_svg_icon_click();//вызываем функцию
 
 </script>
 

@@ -1,3 +1,7 @@
+/*////////////////////////////
+CSS свойства для вкладки blog.php
+Начало
+/////////////////////////////*/
 .news {
 
   border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
@@ -48,3 +52,93 @@
   margin: 0px;
   text-transform: none;
 }
+/*////////////////////////////
+Конец
+CSS свойства для вкладки blog.php
+/////////////////////////////*/
+/*////////////////////////////
+CSS свойства для вкладки blog_new_video.php
+Начало
+/////////////////////////////*/
+
+.all_block_for_video {
+
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  margin-top: 20px;
+  height: 500px;
+  background: rgba(131,50,58,1);
+}
+
+.block_for_video_and_text{
+  float: left;
+  margin-left: 104px;
+}
+.block_for_video{
+
+  width: 320px;
+  margin-top: 20px;
+
+  background: black;
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+}
+.block_for_video_about{
+  border-radius: 5px;/*закругляем объект*/
+  width: 320px;
+  background: white;
+
+}
+.p_video_text{
+  text-indent: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main_title_blog_video{
+  color: white;
+  font-size: 30px;
+  text-align:center;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+/*////////////////////////////
+Конец
+CSS свойства для вкладки blog_new_video.php
+/////////////////////////////*/
+/*////////////////////////////
+CSS свойства для вкладки style_guess_game.php
+Начало
+/////////////////////////////*/
+.guess_game {
+
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+  margin-top: 20px;
+  height: 354px;
+  background: rgba(131,50,58,1);
+}
+
+.guess_game_img {
+
+  float: left;
+  width: 200px;
+  height: 286px;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  background: #FFF;
+  background-size: cover;
+  text-align: center;
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+
+}
+.guess_game_rule {
+  margin-top: 5px;
+  font-size: 1em;
+  text-align:center;
+  color: white;
+
+}
+/*////////////////////////////
+Конец
+CSS свойства для вкладки style_guess_game.php
+/////////////////////////////*/

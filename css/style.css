@@ -154,7 +154,7 @@ button:hover{/*действия при наведении курсором*/
 
 .head_adress{/*настройка блока с адресом*/
 
-  font-size: 16px;
+  font-size: 14px;
   color: #444444;
   margin-top: 24px;
 }
@@ -372,6 +372,12 @@ fill: #83323A;/*цвет для SVG картинки*/
 .point_info_footer_icon svg{
   fill: #83323A;
 }
+.icon_map:hover{/*действия при наведении курсором*/
+  /*находим объект с классом .icon_map*/
+  fill: #FFF;/*меняем цвет иконки на белый*/
+  cursor: pointer;/*курсор становится рукой*/
+}
+
 .point_info_footer_text{
   width: 252px;
   margin-left: 5px;
@@ -383,6 +389,7 @@ fill: #83323A;/*цвет для SVG картинки*/
   float: right;
   margin-top: 40px;
 }
+
 .button_map{
   float: right;
   width: 150px;
@@ -393,9 +400,13 @@ fill: #83323A;/*цвет для SVG картинки*/
   color: #FFF;
   cursor: pointer;
   background: #83323A;
-
 }
 
+.button_map:hover{/*действия при наведении курсором*/
+ background: white;
+ color: rgba(131,50,58,1);/*цвет текста*/
+
+}
 /*////////////////////////////
 CSS свойства для вкладки production.php
 /////////////////////////////*/
@@ -469,3 +480,63 @@ CSS свойства для вкладки production.php
   margin: 0px;
   text-transform: none;
 }
+.price:hover{/*действия при наведении курсором*/
+ background: white;
+ color: rgba(131,50,58,1);/*цвет текста*/
+ border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+}
+.name:hover{/*действия при наведении курсором*/
+ background: white;
+ color: rgba(131,50,58,1);/*цвет текста*/
+ border: 1px solid rgba(58,46,43,1);/*задаем цевт и толщину окантовки*/
+}
+/*////////////////////////////
+Конец
+CSS свойства для вкладки production.php
+/////////////////////////////*/
+/*////////////////////////////
+CSS свойства для вкладки map.php
+Начало
+/////////////////////////////*/
+
+.map_content{
+}
+.map{/*объект с картой*/
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(131,50,58,1);/*задаем цевт и толщину окантовки*/
+  width: 500px;
+  height: 400px;
+  float: left;
+  margin-left: 20px;
+}
+.map_about{/*объект с описанием*/
+  width: 200px;
+  height: 400px;
+  float: left;
+  margin-left: 118px;
+
+  line-height: 20px;/*задаем высоту текста*/
+  color: rgba(131,50,58,1);/*цвет текста*/
+  background: #FFF;
+  border-radius: 5px;/*закругляем объект*/
+  border: 1px solid rgba(131,50,58,1);/*задаем цевт и толщину окантовки*/
+}
+.main_title_map{/*Заголовок страницы*/
+  font-size: 30px;
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.map_about_text{
+  margin-left: 5px;
+}
+.funtik{
+  text-align: right;
+  margin-right: 5px;
+}
+
+/*////////////////////////////
+Конец
+CSS свойства для вкладки map.php
+/////////////////////////////*/
