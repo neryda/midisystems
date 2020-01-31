@@ -18,6 +18,7 @@
         <p class="p_video_text">Баян подключен через USB к ноутбуку и запущена программа Kontakt5.</p>
         <p class="p_video_text">Баян работает напрямую. Клавиши назначены по нотам.</p>
       </div>
+      <div class="clear"></div><!--Ровняем float-->
     </div>
 
     <div class="block_for_video_and_text">

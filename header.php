@@ -6,7 +6,6 @@
   <meta charset='utf-8'><!--Задает кодировку сайта-->
   <link rel="stylesheet" href="css/style.css"><!--Указание на использование таблицы стилей-->
   <link rel="stylesheet" href="css/style_blog_news.css"><!--Указание на использование таблицы стилей для раздела блог-->
-  <link rel="stylesheet" href="css/style_guess_game.css"><!--Указание на использование таблицы стилей для игры-->
   <link rel="shortcut icon" href="img/favicon.ico">
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/forms-lw.min.js"></script>
@@ -57,9 +56,7 @@
       <a href="mailto: venice939@mail.ru" class="head_email"><!--Адрес емейла-->
         venice939@mail.ru<!--При нажатии отправить почту-->
       </a>
-      <div class="head_adress"><!--Адрес компании-->
-        Адрес: г. Воронеж, ул. Перевёрткина, 1/8
-      </div>
+      <div class="head_adress">Адрес: г. Воронеж, ул. Перевёрткина, 1/8</div>
     </div>
 
   </div>

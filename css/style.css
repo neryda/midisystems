@@ -153,10 +153,11 @@ button:hover{/*действия при наведении курсором*/
 }
 
 .head_adress{/*настройка блока с адресом*/
-
+  white-space: nowrap;
+  text-align: right;/*Все содержимое текста блока притянуть вправо*/
   font-size: 14px;
   color: #444444;
-  margin-top: 24px;
+  margin-top: 50px;
 }
 
 
@@ -359,15 +360,17 @@ fill: #83323A;/*цвет для SVG картинки*/
 }
 
 .footer_adrees{
-  float: right;
-  margin-top: 40px;
+
+  margin-top: 20px;
+
 }
 .point_info_footer{
-  margin-bottom: 20px;
+
 }
 
 .point_info_footer_icon{
   float: left;
+  margin-left: 30px;
 }
 .point_info_footer_icon svg{
   fill: #83323A;
@@ -379,11 +382,14 @@ fill: #83323A;/*цвет для SVG картинки*/
 }
 
 .point_info_footer_text{
+  /*text-align: right; Все содержимое текста блока притянуть вправо*/
+  white-space: nowrap;
   width: 252px;
   margin-left: 5px;
   margin-top: 4px;
   float: left;
   color: #FFF;
+  font-size: 14px;
 }
 .footer_contact{
   float: right;
